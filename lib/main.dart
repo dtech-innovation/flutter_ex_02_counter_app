@@ -22,35 +22,27 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
-    
+class _HomePageState extends State<HomePage> {   
   // Variable to store the counter value
   int _counter = 0; 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          
+      appBar: AppBar(         
         // Set the background color of the app bar
-        backgroundColor: Colors.green,
-        
+        backgroundColor: Colors.green,        
         // Set the title of the app bar
-        title: const Text("GeeksforGeeks"),
-      ),
-      
+        title: const Text("DTech"),
+      ),     
       // The main body of the scaffold
-      body: Center(
-        
+      body: Center(       
         // Display a centered text widget
         child: Text(
-          "$_counter",
-          
+          "$_counter",          
           // Apply text styling
-          style: TextStyle(
-            
+          style: TextStyle(           
             // Set font size
-            fontSize: 24, 
-            
+            fontSize: 24,             
             // Set font weight
             fontWeight: FontWeight.bold, 
           ),
@@ -58,8 +50,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
-        onPressed: () {
-          
+        onPressed: () {         
           // Increment the counter value by 1 using setState
           setState(() {
             _counter++;
